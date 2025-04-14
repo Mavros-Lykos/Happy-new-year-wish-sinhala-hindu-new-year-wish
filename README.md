@@ -4,13 +4,11 @@ This is a simple open-source webpage to share **Sinhala & Hindu New Year (Aluth 
 Perfect for sharing a warm wish with friends, family, and your community! 🇱🇰
 <!-- ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png) -->
 
+## Screenshots
 
-## Demo
+![Screenshot](assests/beforeCelebrate.png)
 
-
-![Preview of webpage](assests/preview.gif)
-
-
+![Screenshot](assests/celebrate.png)
 
 ## 🌟 What’s Inside?
 
@@ -24,11 +22,9 @@ Perfect for sharing a warm wish with friends, family, and your community! 🇱�
 
 - [@Mavros-Lykos](https://github.com/Mavros-Lykos)
 
-## Screenshots
+## Demo
 
-![Screenshot](assests/beforeCelebrate.png)
-
-![Screenshot](assests/celebrate.png)
+![Preview of webpage](assests/preview.gif)
 
 ## Run Locally
 
@@ -39,7 +35,6 @@ Clone the project
 ```
 
 Go to the project directory and open with live server(extention)
-
 
 
 ## Feedback
