@@ -8,7 +8,7 @@ Perfect for sharing a warm wish with friends, family, and your community! ğŸ‡±ğŸ
 ## Demo
 
 
-![Preview of webpage](assets/preview.gif)
+![Preview of webpage](assests/preview.gif)
 
 
 
@@ -26,9 +26,9 @@ Perfect for sharing a warm wish with friends, family, and your community! ğŸ‡±ğŸ
 
 ## Screenshots
 
-![Screenshot](assets/beforeCelebrate.png)
+![Screenshot](assests/beforeCelebrate.png)
 
-![Screenshot](assets/celebrate.png)
+![Screenshot](assests/celebrate.png)
 
 ## Run Locally
 
