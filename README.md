@@ -1,4 +1,4 @@
-# 🎉Happy-new-year-wish-sinhala-hindu-new-year-wish 🎊
+# Happy-new-year-wish-sinhala-hindu-new-year-wish 🎉
 
 This is a simple open-source webpage to share **Sinhala & Hindu New Year (Aluth Avurudu)** greetings for **2025**.  
 Perfect for sharing a warm wish with friends, family, and your community! 🇱🇰
