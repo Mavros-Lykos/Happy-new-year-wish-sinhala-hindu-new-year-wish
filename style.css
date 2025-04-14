@@ -1,0 +1,261 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0b132b, #3a506b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.greeting-box {
+    width: 600px;
+    padding: 40px;
+    background: rgba(15, 23, 42, 0.8);
+    box-shadow: 0 0 30px rgba(91, 192, 190, 0.3),
+        0 0 50px rgba(255, 42, 109, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(91, 192, 190, 0.3);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.greeting-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #5bc0be;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(91, 192, 190, 0.7);
+}
+
+.greeting-message {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.author {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    font-size: 14px;
+    color: #ff2a6d;
+    text-shadow: 0 0 5px rgba(255, 42, 109, 0.5);
+    font-style: italic;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #ff2a6d;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff2a6d,
+        0 0 25px #ff2a6d,
+        0 0 50px #ff2a6d,
+        0 0 100px #ff2a6d;
+}
+
+button span {
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff2a6d);
+    animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #05d9e8);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: 0.375s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #05d9e8);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ff2a6d);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* Background effects */
+.bg-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#05d9e81a 1px, transparent 1px),
+        linear-gradient(90deg, #05d9e81a 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: 1;
+}
+
+.neon-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.circle1 {
+    background: #ff2a6d;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 15%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.circle2 {
+    background: #05d9e8;
+    width: 400px;
+    height: 400px;
+    bottom: 10%;
+    right: 10%;
+    animation: float 10s ease-in-out infinite;
+}
+
+.circle3 {
+    background: #7d61ff;
+    width: 250px;
+    height: 250px;
+    bottom: 30%;
+    left: 10%;
+    animation: float 9s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Fireworks Container */
+#fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* Individual firework particle */
+.firework-particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
